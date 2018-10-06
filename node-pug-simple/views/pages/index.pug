@@ -1,0 +1,21 @@
+extends ../layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  section.contacts
+    .container
+      form.form#mail(action='/contact' method="POST"
+      enctype="application/x-www-form-urlencoded")
+        .form__subtitle Связаться со мной
+        if (msg)
+          .status= msg
+        label.form__input-line
+          input(type="text" name="name" placeholder="Имя").form__input
+        label.form__input-line
+          input(type="email" name="email" placeholder="E-mail").form__input
+        textarea(name="text" placeholder="Ваше сообщение" cols="30" rows="10").form__textarea
+        .form__btns.form__input-line
+          input(type="submit" name="" value="Отправить").form__btns-send
+          input(type="reset" name="" value="Очистить").form__btns-reset
