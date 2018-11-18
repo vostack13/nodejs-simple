@@ -3,16 +3,16 @@ const path = require('path');
 const colors = require('colors');
 
 // Формирование массива из названий содержимого директории
-let listContentDir = pathDir => {
+const listContentDir = pathDir => {
   let results = [];
 
   if (!fs.existsSync(pathDir)) {
     return results;
   }
 
-  let list = fs.readdirSync(pathDir);
+  const list = fs.readdirSync(pathDir);
   list.forEach(file => {
-    let stat = fs.statSync(path.join(pathDir, file));
+    const stat = fs.statSync(path.join(pathDir, file));
     let type = stat.isDirectory() ? 'dir' : 'file';
     results.push({
       type: type,
@@ -29,7 +29,7 @@ let listContentDir = pathDir => {
 
 // Удаление содержимого директории.
 // isRemoveDir: (boolean) — флаг для удаления исходной директории
-let clearDir = (pathDir, isRemoveDir = false) => {
+const clearDir = (pathDir, isRemoveDir = false) => {
   if (fs.existsSync(pathDir)) {
     const lsDir = listContentDir(pathDir);
 
@@ -55,7 +55,7 @@ let clearDir = (pathDir, isRemoveDir = false) => {
 };
 
 // Копирование файлов в папки с названием по первому символу.
-let copyFilesSortDir = (filesList = [], targetPathDir) => {
+const copyFilesSortDir = (filesList = [], targetPathDir) => {
   if (!fs.existsSync(targetPathDir)) {
     fs.mkdirSync(targetPathDir);
   } else {
@@ -75,9 +75,9 @@ let copyFilesSortDir = (filesList = [], targetPathDir) => {
 };
 
 exports.newCollectionSort = (
-  isRemoveDir = false,
-  collectionPath = './collections',
-  targetPathDir = './sortCollections'
+  isRemoveDir,
+  collectionPath,
+  targetPathDir
 ) => {
   try {
     if (!fs.existsSync(collectionPath)) {

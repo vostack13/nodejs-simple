@@ -49,6 +49,3 @@ exports.run = [
     }
   }
 ];
-
-exports.removeDir = [
-];
