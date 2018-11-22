@@ -3,4 +3,4 @@ copy/
 collections/
 result/
 sortCollections/
-package-lock.json
+.vscode/

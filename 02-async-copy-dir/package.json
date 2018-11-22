@@ -12,7 +12,7 @@
   "devDependencies": {},
   "scripts": {
     "dir": "mkdir rem/; mkdir rem/{colors,variable,points}; touch rem/colors/{1.txt,2.txt,3.txt}; touch rem/points/{abc.txt,de.txt}",
-    "start": "node api5"
+    "start": "node index start"
   },
   "author": "",
   "license": "ISC"
