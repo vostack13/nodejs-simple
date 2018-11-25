@@ -1,0 +1,16 @@
+extends ../_template
+
+block content
+  .container
+    H1 Upload file
+    if(msg)
+      .msg= msg
+    form(action="/", method="post" enctype="multipart/form-data" class="form-group row justify-content-between")
+      input(type="text" placeholder = 'Описание' name='name' class="col-sm-4 form-control")
+      input#file(type="file", name="photo" class="btn btn-secondary col-sm-3")
+      button(type="submit" class="btn btn-primary col-sm-3") Загрузить файл
+
+    if (pic)
+      each item, index in pic
+        img.pic(src=`${item}`, alt="")
+        .pic-text= index

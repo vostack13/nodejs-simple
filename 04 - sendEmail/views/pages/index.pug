@@ -1,0 +1,19 @@
+extends ../_template
+
+block content
+  .container
+    h1 Send email
+
+    form.form#mail(action='/' method="POST" enctype="application/x-www-form-urlencoded" class="form-group justify-content-center")
+        h3.form__subtitle Связаться со мной
+        .status.badge.badge-success
+        label.form__input-line.col.justify-content-center
+            input(name="name" type="text" placeholder="Имя" class="col-sm-12").form__input.form-control
+        label.form__input-line.col.justify-content-center
+            input(name="email" type="email" placeholder="E-mail" class="col-sm-12").form__input.form-control
+        textarea(placeholder="Ваше сообщение" name="text" class="col-sm-12").form__textarea.form-control
+        .form__btn-line
+            //- .row.justify-content-around
+            button(type="submit").btn.btn-success Отправить
+            button(type="reset").btn.btn-secondary Очистить
+

@@ -1,0 +1,46 @@
+h1 {
+  color: crimson;
+}
+
+body {
+  background-color: darkgrey;
+}
+
+.msg {
+  padding: 20px;
+  background-color: aquamarine;
+  color: darkmagenta;
+}
+
+form {
+  padding: 20px;
+  background-color: cornflowerblue;
+  margin-top: 20px;
+}
+
+.pic {
+  width: 200px;
+}
+
+.form__input-line {
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.form__textarea {
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.form__subtitle {
+  text-align: center;
+  color: crimson;
+  margin-bottom: 20px;
+}
+
+.form__btn-line {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}

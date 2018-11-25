@@ -1,0 +1,11 @@
+extends ../_template
+
+block content
+  .container
+    H1 Main page
+    +menu(0)
+    .row.mt-3
+        form(action="/set", method="post").col-md-6.mb-3
+          button(type="submit" class="btn btn-info btn-lg btn-block") Set cookie
+        form(action="/clear", method="post").col-md-6.mb-3
+          button(type="submit" class="btn btn-info btn-lg btn-block") Clear cookie

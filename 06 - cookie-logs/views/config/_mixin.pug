@@ -1,0 +1,9 @@
+mixin menu(activeItem)
+  ul.nav.nav-tabs.nav-justified
+    each item, index in menuItem
+      if (index === activeItem)
+        li.nav-item
+          a.nav-link.active(href=`${item.url}`)= item.title
+      else
+        li.nav-item
+          a.nav-link(href=`${item.url}`)= item.title
