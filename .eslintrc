@@ -1,0 +1,32 @@
+{
+	"extends": ["eslint:recommended", "plugin:prettier/recommended", "prettier/flowtype", "prettier/react", "prettier/standard"],
+	"plugins": ["prettier", "eslint-plugin-standard", "eslint-plugin-prettier"],
+	"parser": "babel-eslint",
+	"parserOptions": {
+		"sourceType": "module",
+		"allowImportExportEverywhere": false,
+		"codeFrame": true
+	},
+	"env": {
+		"commonjs": true,
+		"es6": true,
+		"node": true
+	},
+	"rules": {
+		"no-this-before-super": "warn",
+		"no-unreachable": "warn",
+		"no-unused-vars": "warn",
+		"constructor-super": "warn",
+		"valid-typeof": "warn",
+		"no-extra-semi": "warn",
+		"no-console": "warn",
+		"prefer-const": "error",
+		"no-undef": "error",
+		"no-const-assign": "error",
+		"prettier/prettier": ["error", {
+			"singleQuote": true,
+			"parser": "flow",
+			"usePrettierrc": false
+		}]
+	}
+}
