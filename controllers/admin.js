@@ -6,12 +6,12 @@ const db = require('../models/db');
 module.exports.getAdmin = function(req, res) {
   if (!req.session.isAdmin) {
     res.redirect('/login');
+  } else {
+    res.render('pages/admin', {
+      msgskill: '',
+      msgfile: ''
+    });
   }
-
-  res.render('pages/admin', {
-    msgskill: '',
-    msgfile: ''
-  });
 };
 
 module.exports.uploadProducts = function(req, res, next) {

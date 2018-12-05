@@ -5,8 +5,9 @@ const psw = require('../libs/password');
 module.exports.getLogin = function(req, res) {
   if (req.session.isAdmin) {
     res.redirect('/admin');
+  } else {
+    res.render('pages/login');
   }
-  res.render('pages/login');
 };
 
 module.exports.auth = function(req, res, next) {
