@@ -1,0 +1,34 @@
+{
+  "cats": [
+    {
+      "id": "5a57a4ddf250bd2c68b1a55e",
+      "name": "Murchik",
+      "age": 13
+    },
+    {
+      "id": "5aac0afb37056725ccb8d505",
+      "name": "Simon",
+      "age": 1
+    },
+    {
+      "id": "5b521f80fbdb12092cb75844",
+      "name": "Liza",
+      "age": 1
+    },
+    {
+      "id": "5b521f8cfbdb12092cb75845",
+      "name": "Gerda",
+      "age": 8
+    },
+    {
+      "id": "5b521f9afbdb12092cb75846",
+      "name": "Dinka",
+      "age": 11
+    },
+    {
+      "id": "b8005678-eac4-4160-9319-fb645cf1242c",
+      "name": "Анфиса",
+      "age": 14
+    }
+  ]
+}

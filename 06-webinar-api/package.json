@@ -1,0 +1,16 @@
+{
+  "name": "06-webinar-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --ignore models/db.json app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "lowdb": "^1.0.0",
+    "uuid": "^3.3.2"
+  }
+}
