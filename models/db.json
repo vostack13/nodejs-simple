@@ -1,22 +1,24 @@
 {
-  "skills": [{
-      "number": "2",
+  "skills": [
+    {
+      "number": "23",
       "text": "Возраст начала занятий на скрипке"
     },
     {
-      "number": "1",
+      "number": "23",
       "text": "Концертов отыграл"
     },
     {
-      "number": "4",
+      "number": "123",
       "text": "Максимальное число городов в туре"
     },
     {
-      "number": "2",
+      "number": "213",
       "text": "Лет на сцене в качестве скрипача"
     }
   ],
-  "products": [{
+  "products": [
+    {
       "src": "./assets/img/products/Work1.jpg",
       "name": "Вино вдохновение",
       "price": 600
