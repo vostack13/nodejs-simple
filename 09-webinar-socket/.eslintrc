@@ -1,0 +1,14 @@
+{
+  "env": {
+    "browser": true
+  },
+  "extends": "standard",
+  "globals": {
+    "$": false,
+    "io": false
+  },
+  "rules": {
+    "no-extra-semi": "error",
+    "semi": [2, "always"]
+  }
+}
